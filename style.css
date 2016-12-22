@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|PT+Sans+Narrow|Space+Mono');
+
+*{
+  margin: 0 0 0 0;
+  background-color: #e7e7e7;
+}
+
+h1{
+
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-align: left;
+  font-size: 60px;
+  padding-bottom: 40px;
+}
+input{
+  display: block;
+  width: 100%;
+  padding: 10px;
+ border: solid 1px #dcdcdc;
+ transition: box-shadow 0.3s, border 0.3s;
+}
+button{
+  margin-top: 20px;
+  height: 40px;
+}
+#addItem{
+  width: 50%;
+  display: inline;
+  font-family: 'Space Mono', monospace;
+  background-color: #008CBA;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+}
+#removeItem{
+  width: 49%;
+  display: inline;
+  font-family: 'Space Mono', monospace;
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+}
+li{
+  list-style:decimal;
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 10px;
+}
+.finishButton{
+  width: 30%;
+  display: block;
+margin-left: 35%;
+margin-bottom: 10px;
+  font-family: 'Space Mono', monospace;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  float: none;
+  font-size: 10px;
+}
