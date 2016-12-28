@@ -1,64 +1,76 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|PT+Sans+Narrow|Space+Mono');
+/**
+Version 0.3
+- Used Bootstrap/done
+* REPLACED LIST ITEMS WITH WELLS/done
+* COMPLETED BUTTON HAS FULL FUNCTIONALITY/done
+- Make text disappear after clicking button/done
+- Get enter key functionality
+* ADDED NICE BACKGROUND/done
+* ADDED TRANSITIONS/done
+**/
 
-*{
-  margin: 0 0 0 0;
-  background-color: #e7e7e7;
+/**
+Version 0.4
+- Make Text Input Field Bigger/done
+- Make Buttons Look Nicer/done
+**/
+
+/* VERSION 1.0
+SAVE TO-DO LIST ON SERVER
+IMPROVE OVERALL LOOK OF THE APP
+PRIORITY SETTINGS
+*/
+
+/* Background pattern from subtlepatterns.com */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|PT+Sans+Narrow|Space+Mono');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+body{
+  background-image: url("imgs/geometry.png");
+}
+
+div.well{
+  background-color: #FAEBD7;
+  border-radius: 0;
 }
 
 h1{
 
-  font-family: 'PT Sans Narrow', sans-serif;
+  /*font-family: 'PT Sans Narrow', sans-serif;*/
+  font-family: 'Oswald', sans-serif;
   text-align: left;
-  font-size: 60px;
+  font-size: 20rem;
   padding-bottom: 40px;
+  transition: transform 3s;
 }
-input{
-  display: block;
-  width: 100%;
-  padding: 10px;
- border: solid 1px #dcdcdc;
- transition: box-shadow 0.3s, border 0.3s;
+
+h1:hover{
+  transform: translateX(10%);
 }
-button{
-  margin-top: 20px;
-  height: 40px;
-}
+
 #addItem{
-  width: 50%;
-  display: inline;
+
   font-family: 'Space Mono', monospace;
-  background-color: #008CBA;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  border: none;
+  background-color: none;
+  /* #5F9F9F*/
+  color: #5F9F9F;
+  border: 3px solid #5F9F9F;
+  border-radius: 0;
 }
-#removeItem{
-  width: 49%;
-  display: inline;
+
+.removeItem{
   font-family: 'Space Mono', monospace;
-  background-color: #f44336;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  border: none;
+  background-color: none;
+  color: #59323C;
+  border: 1px solid #59323C;
+  border-radius: 0;
 }
-li{
-  list-style:decimal;
-  font-family: 'Montserrat', sans-serif;
-  padding-bottom: 10px;
+
+form{
+  margin-bottom: 4rem;
 }
-.finishButton{
-  width: 30%;
-  display: block;
-margin-left: 35%;
-margin-bottom: 10px;
-  font-family: 'Space Mono', monospace;
-  background-color: #4CAF50;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  border: none;
-  float: none;
-  font-size: 10px;
+
+#inputItem{
+  width: 100rem;
+  border-radius: 0;
 }

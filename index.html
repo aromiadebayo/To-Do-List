@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-<!***********************************
-Version 0.1
-- Add items to Unordered List (JavaScript)/done
-- Remove items from Unordered List/done
-- CSS Upgrades (CSS)
-- Add keyboard functionality
-- Hover mouse to check list items
-***********************************!>
+
+
 <html>
 
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
 
-  <body>
-    <h1>TO-Do LIST WEB APP</h1>
-    <ul>
-    </ul>
-    <input type="text">
-    <span>
-    <button id="addItem">Add List Item</button>
-    <button id="removeItem">Remove List Item</button>
-  </span>
-  </body>
+<body>
+  <h1 class="text-center"> ~To-Do~ </h1>
+
+  <!--INPUT LIST ITEM -->
+  <form class="form-inline text-center">
+
+    <div class="form-group">
+      <input type="text" class="form-control" id="inputItem" >
+    </div>
+    <button  type="button"class="btn btn-default" id="addItem">Add to List</button>
+  </form>
+  <!-- INPUT LIST ITEM -->
+
+</body>
 
 
 <script src="app.js"></script>
